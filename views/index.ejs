@@ -1,0 +1,9 @@
+<ul class="message-board">
+  <% messages.map((message) => {%>
+  <li class="message-item">
+    <p class="message-user"><%=message.user%></p>
+    <p class="message-text"><%=message.text%></p>
+    <p class="message-date"><%=message.added%></p>
+  </li>
+  <%})%>
+</ul>
