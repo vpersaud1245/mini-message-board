@@ -9,6 +9,6 @@ module.exports = {
       user: req.body.authorsName,
       added: new Date(),
     });
-    res.render("index", { messages: messages });
+    res.redirect("/");
   },
 };
