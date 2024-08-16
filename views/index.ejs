@@ -1,9 +1,11 @@
+<a href="/new" class="new-message-btn">New message</a>
 <ul class="message-board">
-  <% messages.map((message) => {%>
+  <% messages.map((message,index) => {%>
   <li class="message-item">
     <p class="message-user"><%=message.user%></p>
     <p class="message-text"><%=message.text%></p>
     <p class="message-date"><%=message.added%></p>
+    <a href="/message/<%=index%>" class="message-page-link">Open Message</a>
   </li>
   <%})%>
 </ul>

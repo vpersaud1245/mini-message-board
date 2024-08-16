@@ -1,0 +1,8 @@
+<% messages.map((message,index) => {%> <%if (index === messageId) {%>
+<div class="message-item">
+  <p class="message-user"><%=message.user%></p>
+  <p class="message-text"><%=message.text%></p>
+  <p class="message-date"><%=message.added%></p>
+  <a href="/">Home</a>
+</div>
+<%}})%>
